@@ -1,0 +1,388 @@
+{
+    "skills" : [
+        {
+            "name" : "Language",
+            "img" : "img/backend.png",
+            "data" : [
+                {
+                    "name" : "HTML",
+                    "img" : "img/html.png"
+                },
+                {
+                    "name" : "PHP",
+                    "img" : "img/php.png"
+                },
+                {
+                    "name" : "Python",
+                    "img" : "img/python.png"
+                },
+                {
+                    "name" : "Java",
+                    "img" : "img/java.png"
+                },
+                {
+                    "name" : "Kotlin",
+                    "img" : "img/Kotlin.png"
+                },
+                {
+                    "name" : "JavaScript",
+                    "img" : "img/js.png"
+                },
+                {
+                    "name" : "CSS",
+                    "img" : "img/css.png"
+                },
+                {
+                    "name" : "C",
+                    "img" : "img/C.png"
+                }
+            ]
+        },
+        {
+            "name" : "Framework",
+            "img" : "img/framework.png",
+            "data" : [
+                {
+                    "name" : "Symfony",
+                    "img" : "img/symfony.png"
+                },
+                {
+                    "name" : "Node.js",
+                    "img" : "img/nodejs.png"
+                },
+                {
+                    "name" : "Vue.js",
+                    "img" : "img/vuejs.png"
+                },
+                {
+                    "name" : "React.js",
+                    "img" : "img/React.png"
+                },
+                {
+                    "name" : "Bootstrap",
+                    "img" : "img/bootstrap.png"
+                },
+                {
+                    "name" : "Tailwind",
+                    "img" : "img/Tailwind.svg"
+                }
+            ]
+        },
+        {
+            "name" : "DataBase",
+            "img" : "img/database.png",
+            "data" : [
+                {
+                    "name" : "MySQL",
+                    "img" : "img/mysql.png"
+                },
+                {
+                    "name" : "PhpMyAdmin",
+                    "img" : "img/phpmyadmin.png"
+                },
+                {
+                    "name" : "PowerAMC",
+                    "img" : "img/powerAMC.png"
+                }
+            ]
+        },
+        {
+            "name" : "Outils/IDE/OS",
+            "data" : [
+                {
+                    "name" : "Git",
+                    "img" : "img/git.png"
+                },
+                {
+                    "name" : "JetBrains",
+                    "img" : "img/jetbrains.png"
+                },
+                {
+                    "name" : "VS Code",
+                    "img" : "img/vscode.png"
+                },
+                {
+                    "name" : "Windows",
+                    "img" : "img/windows.png"
+                },
+                {
+                    "name" : "Mac OS",
+                    "img" : "img/mac.png"
+                },
+                {
+                    "name" : "Linux",
+                    "img" : "img/linux.png"
+                }
+
+            ]
+        }
+    ],
+    "me" : {
+        "img" : "img/moi.png",
+        "description" : "Salut ! Moi, c'est Emmanuel. Actuellement en deuxième année d'études en informatique, je suis le genre de personne qui adore résoudre des casse-têtes et transformer les lignes de code en quelque chose de cool et fonctionnel.|Tout a commencé quand j'ai décidé de démonter mon vieux PC pour y changer les pièces et avoir plus de performances dans les jeux vidéos. Depuis, je suis fasciné par tout ce qui touche à la technologie et au développement.|Pour être honnête, l'école et moi, ça n'a pas toujours été une histoire d'amour. Mais quand il s'agit de mettre les mains dans le cambouis et de travailler sur des projets personnels, là je suis dans mon élément. Que ce soit pour développer des bots discord qui me plaisent ou pour trifouiller dans le hardware, je suis toujours prêt à relever le défi.|Quand je ne suis pas en train de coder ou de me plonger dans mes études, vous pouvez me trouver en train de jouer aux jeux vidéo ou en train de regarder des vidéos de Underscore_. Ça me permet de me détendre et de m'inspirer pour mes prochains projets.|Je suis toujours à la recherche de nouvelles opportunités pour apprendre et grandir dans le domaine de l'informatique. Si vous avez des projets intéressants ou des défis à relever, n'hésitez pas à me contacter. J'ai hâte de collaborer et de créer quelque chose d'exceptionnel ensemble."
+    },
+    "projets" : [
+        {
+            "name" : "Portfolio",
+            "img" : "https://www.aht.li/3815090/image.png",
+            "git" : "https://github.com/Manoleau/Portfolio",
+            "ready" : true,
+            "description" :"C'est ce site web.|Fait avec HTML, CSS, JavaScript."
+        },
+        {
+            "name" : "EDT IUT",
+            "img" : "https://www.aht.li/3815097/logo_EDTIUT_1.png",
+            "git" : "https://github.com/Manoleau/edt-iut",
+            "ready" : true,
+            "description" : "C'est un bot discord qui affiche les emplois du temps des étudiants à l'IUT informatique mais aussi de voir quelles salles sont libre.|Fait avec Python, Discord."
+        },
+        {
+            "name" : "League DLE",
+            "img" : "https://www.aht.li/3813533/logo_leaguedle.png",
+            "git" : "https://github.com/Manoleau/bot-lol-dle",
+            "ready" : true,
+            "description" : "C'est un bot Discord où on doit trouver la bonne réponse en fonction des informations que le bot donne.|Thème : League of Legends.|Fait avec Python, API LoL, SQLite3, Discord."
+        },
+        {
+            "name" : "MusiCord",
+            "img" : "https://www.aht.li/3818521/MusicCord.png",
+            "ready" : false,
+            "description" : "C'est un bot Discord où l'on peut faire des recherches sur spotify et voir les informations des artistes|Fait avec Python, API Spotify, Discord."
+        },
+        {
+            "name" : "League Mastery",
+            "img" : "img/LeagueMastery.webp",
+            "ready" : true,
+            "git" : "https://github.com/Manoleau/league-mastery",
+            "description" : "Cette une application mobile (projet IUT) qui permet d'obtenir les informations des joueurs sur leurs maîtrises de champions.|Thème : League of Legends.|Fait avec Kotlin (Android Studio), Mobile, Firebase."
+        },
+        {
+            "name" : "API League Mastery",
+            "img" : "img/LeagueMastery.webp",
+            "ready" : true,
+            "git" : "https://github.com/Manoleau/Api-League-Mastery",
+            "description" : "Cette api est conçu pour l'application mobile LeagueMastery (actuellement hors ligne), elle permet d'obtenir les informations des joueurs sur leurs maîtrises de champions.|Thème : League of Legends.|Fait avec JavaScript, Node.js, express, mongoose."
+        }
+        
+    ],
+    "exppro" : [
+        {
+            "name" : "Stage OnylRocks",
+            "datadebut" : "15 avril 2024",
+            "datefin" : "30 juin 2024",
+            "description" : "Durant ce stage, j'ai appris à utiliser le framework Symfony avec mon tuteur de stage Alexis Monnet et mon collegue de stage Jeremy Girard mais j'ai notamment appris à travailler en équipe grâce a des technique avancées de git mais aussi le fait de travailler dans un espace de coworking convivial "
+        },
+        {
+            "name" : "Job été Arboiserie",
+            "datadebut" : "3 juillet 2023",
+            "datefin" : "28 juillet 2023",
+            "description" : "J'ai acquis une sensibilité à la qualité et au souci du détail grâce à mon travail en tant que menuisier artisanal, en veillant à ce que chaque pièce produite soit à la hauteur des normes de qualité les plus élevées."
+        },
+        {
+            "name" : "Job été Colruyt",
+            "datadebut" : "4 juillet 2022",
+            "datefin" : "26 août 2022",
+            "description" : "Première experience professionnelle"
+        }
+    ],
+    "compIUT" : [
+        {
+            "tabName" : "comp1",
+            "label" : "Réaliser",
+            "labelAvance" : "Compétence : Réaliser",
+            "color" : "#B80905",
+            "description" : "Développer : Concevoir, Coder, tester et intégrer une solution informatique pour un client.",
+            "niveaux" : [
+                {
+                    "degre" : 1,
+                    "color" : "#E7D3D3",
+                    "texte" : "Développer des applications informatiques simples"
+                },
+                {
+                    "degre" : 2,
+                    "color" : "#EE9494",
+                    "texte" : "Partir des exigences et aller jusqu’à une application complète"
+                },
+                {
+                    "degre" : 3,
+                    "color" : "#B80905",
+                    "texte" : "Adapter des applications sur un ensemble de supports (embarqué, web, mobile, IoT…)"
+                }
+            ],
+            "niveauAtteint" : 2,
+            "justification" : {
+                "texte" : "Je suis tout à fait capable de créer une application complète dans un langage donné car j'ai réalisé de nombreux projets sur divers langages au cours de mes 4 semestres d'études ainsi que dans mes projets personnels. Cependant, je manque d'expertise pour l'adapter à plusieurs langages.",
+                "projet" : [
+                    "Stage - OnylRocks",
+                    "SAE - Java et Graphe",
+                    "SAE - Daily Info",
+                    "SAE - Annuaire en C",
+                    "Projet - CoursesPhp",
+                    "Perso - LeagueMastery sur Mobile et son API",
+                    "Perso - Les bots discord en python"
+                ]
+            }
+        },
+        {
+            "tabName" : "comp2",
+            "label" : "Optimiser",
+            "color" : "#ED8C51",
+            "labelAvance" : "Compétence : Optimiser",
+            "description" : "Proposer des applications informatiques optimisées en fonction de critères spécifiques : Temps d'exécution, précision, consommation de ressources, etc...",
+            "niveaux" : [
+                {
+                    "degre" : 1,
+                    "color" : "#F3E1D1",
+                    "texte" : "Appréhender et construire des algorithmes"
+                },
+                {
+                    "degre" : 2,
+                    "color" : "#EDA072",
+                    "texte" : "Sélectionner les algorithmes adéquats pour répondre à un problème donné"
+                },
+                {
+                    "degre" : 3,
+                    "color" : "#ED8C51",
+                    "texte" : "Analyser et optimiser des applications"
+                }
+            ],
+            "niveauAtteint" : 2,
+            "justification" : {
+                "texte" : "Je pense avoir un très bon niveau dans ce domaine, mais pas excellent non plus. En testant une application, je suis capable de repérer rapidement les problèmes d'optimisation et de trouver des solutions adaptées à ceux-ci.",
+                "projet" : [
+                    "Stage - OnylRocks",
+                    "SAE - Comparaison algorithmique en python",
+                    "SAE - Daily Info",
+                    "Projet - CoursesPhp",
+                    "Perso - LeagueMastery sur Mobile et son API",
+                    "Perso - Les bots discord en python"
+                ]
+            }
+
+        },
+        {
+            "tabName" : "comp3",
+            "label" : "Administrer",
+            "color" : "#EFBA11",
+            "labelAvance" : "Compétence : Administrer",
+            "description" : "Installer, configurer, mettre à disposition, maintenir en conditions opérationnelles des infrastructures, des services et des réseaux et optimiser le système informatique d'une organisation.",
+            "niveaux" : [
+                {
+                    "degre" : 1,
+                    "color" : "#F4E7B6",
+                    "texte" : "Installer et configurer un poste de travail"
+                },
+                {
+                    "degre" : 2,
+                    "color" : "#F2D768",
+                    "texte" : "Déployer des services dans une architecture réseau"
+                }
+            ],
+            "niveauAtteint" : 1,
+            "justification" : {
+                "texte" : "J'ai le niveau minimal pour cette compétence car je n'ai pas trouvé les TP intéressants ni bien concrétisés, donc je ne m'y suis pas beaucoup investi. De plus, ce n'est pas le parcours BUT que j'ai choisi.",
+                "projet" : [
+                    "SAE - Création/Configuration d'un réseaux"
+                ]
+            }
+        },
+        {
+            "tabName" : "comp4",
+            "label" : "Gérer",
+            "color" : "#8CC850",
+            "labelAvance" : "Compétence : Gérer",
+            "description" : "Concevoir, gérer, administrer et exploiter les données de l'entreprise et mettre à disposition toutes les informations pour un bon pilotage de l'entreprise.",
+            "niveaux" : [
+                {
+                    "degre" : 1,
+                    "color" : "#E1E6D6",
+                    "texte" : "Concevoir et mettre en place une base de données à partir d’un cahier des charges client"
+                },
+                {
+                    "degre" : 2,
+                    "color" : "#ADD582",
+                    "texte" : "Optimiser une base de données, interagir avec une application et mettre en oeuvre la sécurité"
+                }
+            ],
+            "niveauAtteint" : 2,
+            "justification" : {
+                "texte" : "Je pense être entre le niveau 1 et 2 dans cette compétence. Avant mon stage chez OnylRocks, je savais comment intégrer une base de données avec une application grâce aux API et l'optimiser, mais je ne savais pas mettre en œuvre la sécurité avec un système de chiffrement.",
+                "projet" : [
+                    "Stage - OnylRocks",
+                    "SAE - Daily Info",
+                    "SAE - Création base de données - Fleuriste",
+                    "SAE - Analyse avec Power BI",
+                    "Projet - CoursesPhp",
+                    "Perso - LeagueMastery sur Mobile et son API",
+                    "Perso - Les bots discord en python"
+                ]
+            }
+        },
+        {
+            "tabName" : "comp5",
+            "label" : "Conduire",
+            "color" : "#0A215E",
+            "labelAvance" : "Compétence : Conduire",
+            "description" : "Satisfaire les besoins des utilisateurs au regard de la chaîne de valeur du client, organiser et piloter un projet informatique avec des méthodes classiques ou agiles.",
+            "niveaux" : [
+                {
+                    "degre" : 1,
+                    "color" : "#CAD8EB",
+                    "texte" : "Identifier les besoins métiers des clients et des utilisateurs"
+                },
+                {
+                    "degre" : 2,
+                    "color" : "#89ADD9",
+                    "texte" : "Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs"
+                }
+            ],
+            "niveauAtteint" : 1,
+            "justification" : {
+                "texte" : "Je pense être à ce niveau là car ce n'est pas mon fort",
+                "projet" : [
+                    "Stage - OnylRocks",
+                    "SAE - Daily Info",
+                    "SAE - Poster",
+                    "SAE - Recueil de besoins",
+                    "Projet - CoursesPhp"
+                ]
+            }
+
+        },
+        {
+            "tabName" : "comp6",
+            "label" : "Collaborer",
+            "color" : "#0F0F0F",
+            "labelAvance" : "Compétence : Collaborer",
+            "description" : "Acquérir, développer et exploiter les aptitudes nécessaires pour travailler efficacement dans une équipe informatique.",
+            "niveaux" : [
+                {
+                    "degre" : 1,
+                    "color" : "#D5D1BD",
+                    "texte" : "Identifier ses aptitudes pour travailler dans une équipe"
+                },
+                {
+                    "degre" : 2,
+                    "color" : "#A9A074",
+                    "texte" : "Situer son rôle et ses missions au sein d’une équipe informatique"
+                },
+                {
+                    "degre" : 3,
+                    "color" : "#0F0F0F",
+                    "texte" : "Manager une équipe informatique"
+                }
+            ],
+            "niveauAtteint" : 2,
+            "justification" : {
+                "texte" : "Le stage chez Onyl Rocks m'a vraiment aidé à travailler au sein d'une équipe mais aussi à m'y retrouver dans les missions. Les SAE n'étaient pas vraiment utiles pour cela.",
+                "projet" : [
+                    "Stage - OnylRocks",
+                    "SAE - Daily Info",
+                    "SAE - Poster",
+                    "SAE - Environnement économique",
+                    "Projet - CoursesPhp"
+                ]
+            }     
+        }       
+    ]
+}
