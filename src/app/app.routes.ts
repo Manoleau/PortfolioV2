@@ -5,5 +5,4 @@ import { TestViewComponent } from './test-view/test-view.component';
 export const routes: Routes = [
   { path: '', component: HomeViewComponent },
   { path: 'test', component: TestViewComponent },
-  { path: '**', redirectTo: '' }
 ];
