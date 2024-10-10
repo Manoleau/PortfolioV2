@@ -3,11 +3,12 @@ import {Hero} from "../models/hero";
 import { HeroComponent } from "../hero/hero.component";
 import {InfosService} from "../services/infos.service";
 import { CompetencesComponent } from "../competences/competences.component";
+import {InformationsComponent} from "../informations/informations.component";
 
 @Component({
   selector: 'app-home-view',
   standalone: true,
-  imports: [HeroComponent, CompetencesComponent],
+  imports: [HeroComponent, CompetencesComponent, InformationsComponent],
   templateUrl: './home-view.component.html',
   styleUrl: './home-view.component.css'
 })

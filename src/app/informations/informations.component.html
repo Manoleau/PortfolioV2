@@ -1,0 +1,9 @@
+<div class="d-flex flex-wrap justify-content-between infos mx-auto">
+  @for (info of informations; track $index) {
+    <div class="info">
+      <app-command-svg />
+      <h2>{{ info.titre }}</h2>
+      <p>{{ info.texte }}</p>
+    </div>
+  }
+</div>

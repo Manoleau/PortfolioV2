@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {Hero} from "../models/hero";
 import {Competence} from "../models/competence";
 import {CategorieCompetence} from "../models/categorie-competence";
+import {Information} from "../models/information";
 
 @Injectable({
   providedIn: 'root'
@@ -124,6 +125,17 @@ export class InfosService {
     }
   ]
 
+  private informations: Information[] = [
+    {
+      titre: 'Autodidacte',
+      texte: 'En tant que développeur autodidacte, j\'ai acquis une expertise polyvalente en apprenant par moi-même, ce qui me permet d\'aborder les défis avec créativité et adaptabilité.'
+    },
+    {
+      titre: 'Flexibilité et Adaptabilité',
+      texte: 'Développeur flexible et adaptable, je propose des solutions innovantes en m\'adaptant rapidement aux nouvelles technologies. Collaboration aisée avec des équipes multidisciplinaires et réponses adaptées aux projets spécifiques.'
+    }
+  ]
+
   constructor() { }
 
   getHero(): Hero {
@@ -139,5 +151,8 @@ export class InfosService {
       this.datebase,
       this.other
     ]
+  }
+  getInformations(): Information[] {
+    return this.informations;
   }
 }
