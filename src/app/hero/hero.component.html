@@ -1,0 +1,27 @@
+<div class="container mt-5 text-center">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <!-- Image au-dessus, centrée -->
+      <img [src]="hero.photo" alt="{{ hero.nom }}" class="hero-photo rounded-circle shadow mb-3" style="width: 200px; height: 200px; object-fit: cover;">
+
+      <!-- Nom complet en dessous -->
+      <h1 class="hero-name">{{ hero.prenom }} {{ hero.nom }}</h1>
+
+      <!-- Profession juste en dessous du nom -->
+      <h3 class="hero-profession">{{ hero.profession }} / {{ hero.personnalite }}</h3>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/emmanuel-ardoin-819217251/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BQ20phKFmRayuyT9ne%2Ber0g%3D%3D" target="_blank" class="me-3">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://github.com/Manoleau" target="_blank" class="me-3">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+
+      </div>
+      <a href="CVManu.pdf" download class="btn btn-primary mx-auto">
+        Mon CV <i class="fas fa-arrow-right ms-2"></i>
+      </a>
+
+    </div>
+  </div>
+</div>

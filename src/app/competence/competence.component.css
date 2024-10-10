@@ -1,0 +1,27 @@
+.competence-card {
+  width: 150px;
+  background-color: #283044;
+  color: white;
+  border-radius: 50px;
+  padding: 12px;
+  text-align: center;
+  border: none;
+  transition: transform 0.2s;
+  flex-direction: column;
+  align-items: center;
+}
+
+.competence-card:hover {
+  transform: scale(1.05); /* Agrandir légèrement lors du survol */
+}
+span {
+  font-size: 15px;
+}
+i {
+  width: 1.5em;
+}
+img, svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  filter: brightness(0) invert(1);
+}

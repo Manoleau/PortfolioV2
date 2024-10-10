@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
+import {Hero} from "./models/hero";
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,5 @@ import { HeaderComponent } from './header/header.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-    title = 'Portfolio';
 
 }
