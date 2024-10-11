@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  <div class="row">
+    @for (projet of projets; track $index) {
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <!-- <img [src]="projet.image" class="card-img-top" alt="{{ projet.nom }}"> -->
+          <div class="card-body">
+            <h5 class="card-title">{{ projet.nom }}</h5>
+            <!-- <p class="card-text">{{ projet.description }}</p> -->
+            <a [href]="projet.git" target="_blank" class="btn btn-primary">Voir le git</a>
+            <a href="#" target="_blank" class="btn btn-primary ms-2">+ d'infos</a>
+          </div>
+          @if (!projet.pret) {
+            <div class="card-footer text-muted">
+              <small>En cours de développement</small>
+            </div>
+          }
+        </div>
+      </div>
+    }
+
+  </div>
+</div>

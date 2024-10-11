@@ -3,6 +3,7 @@ import {Hero} from "../models/hero";
 import {Competence} from "../models/competence";
 import {CategorieCompetence} from "../models/categorie-competence";
 import {Information} from "../models/information";
+import {Projet} from "../models/projet";
 
 @Injectable({
   providedIn: 'root'
@@ -136,6 +137,52 @@ export class InfosService {
     }
   ]
 
+  private projets: Projet[] = [
+    {
+      nom: 'Portfolio',
+      image: 'projet-portfolio.PNG',
+      description: "C'est mon Portfolio",
+      git: 'https://github.com/Manoleau/PortfolioV2',
+      pret: false,
+    },
+    {
+      nom: 'LeagueMastery',
+      image: '',
+      description: '',
+      git: '',
+      pret: true,
+    },
+    {
+      nom: 'EDT IUT',
+      image: 'https://www.aht.li/3813545/logo_EDTIUT.png',
+      description: '',
+      git: 'https://github.com/Manoleau/edt-iut',
+      pret: true,
+    },
+    {
+      nom: '',
+      image: '',
+      description: '',
+      git: '',
+      pret: false,
+    },
+    {
+      nom: '',
+      image: '',
+      description: '',
+      git: '',
+      pret: false,
+    },
+    {
+      nom: '',
+      image: '',
+      description: '',
+      git: '',
+      pret: false,
+    },
+
+  ];
+
   constructor() { }
 
   getHero(): Hero {
@@ -154,5 +201,8 @@ export class InfosService {
   }
   getInformations(): Information[] {
     return this.informations;
+  }
+  getProjets(): Projet[] {
+    return this.projets;
   }
 }
