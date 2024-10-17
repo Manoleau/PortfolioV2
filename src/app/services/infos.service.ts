@@ -205,4 +205,11 @@ export class InfosService {
   getProjets(): Projet[] {
     return this.projets;
   }
+
+  getProjet(nomProjet: string | null): Projet | undefined {
+    if (nomProjet) {
+      return this.projets.find((p) => p.nom.toLowerCase().replace(' ', '') === nomProjet.toLowerCase().replace(' ', ''));
+    }
+    return undefined
+  }
 }

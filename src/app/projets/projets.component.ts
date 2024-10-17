@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {InfosService} from "../services/infos.service";
 import {Projet} from "../models/projet";
 
@@ -10,7 +10,7 @@ import {Projet} from "../models/projet";
   styleUrl: './projets.component.css'
 })
 export class ProjetsComponent implements OnInit {
-
+  @Input() avance!: boolean
   projets: Projet[] = [];
   constructor(private infosService: InfosService) {}
 

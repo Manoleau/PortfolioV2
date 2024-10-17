@@ -3,12 +3,16 @@
     @for (projet of projets; track $index) {
       <div class="col-md-4 mb-4">
         <div class="card shadow-sm">
-          <!-- <img [src]="projet.image" class="card-img-top" alt="{{ projet.nom }}"> -->
+          @if (avance) {
+            <img [src]="projet.image" class="card-img-top" alt="{{ projet.nom }}">
+          }
           <div class="card-body">
             <h5 class="card-title">{{ projet.nom }}</h5>
-            <!-- <p class="card-text">{{ projet.description }}</p> -->
+            @if (avance) {
+              <p class="card-text">{{ projet.description }}</p>
+            }
             <a [href]="projet.git" target="_blank" class="btn btn-primary">Voir le git</a>
-            <a href="#" target="_blank" class="btn btn-primary ms-2">+ d'infos</a>
+            <a href="/projet/{{projet.nom}}" target="_blank" class="btn btn-primary ms-2">+ d'infos</a>
           </div>
           @if (!projet.pret) {
             <div class="card-footer text-muted">
