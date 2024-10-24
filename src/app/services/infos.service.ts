@@ -123,6 +123,11 @@ export class InfosService {
       nom: 'MongoDB',
       image: '',
       categorie: this.datebase
+    },
+    {
+      nom: 'PostgreSQL',
+      image: '',
+      categorie: this.datebase
     }
   ]
 
@@ -130,6 +135,10 @@ export class InfosService {
     {
       titre: 'Autodidacte',
       texte: 'En tant que développeur autodidacte, j\'ai acquis une expertise polyvalente en apprenant par moi-même, ce qui me permet d\'aborder les défis avec créativité et adaptabilité.'
+    },
+    {
+      titre: 'Spécialité Backend',
+      texte: 'Développeur backend, je conçois des API performantes et sécurisées, en optimisant l\'architecture serveur et la gestion des bases de données, tout en garantissant l\'évolutivité des systèmes.'
     },
     {
       titre: 'Flexibilité et Adaptabilité',
