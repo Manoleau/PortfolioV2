@@ -4,6 +4,7 @@ import {Competence} from "../models/competence";
 import {CategorieCompetence} from "../models/categorie-competence";
 import {Information} from "../models/information";
 import {Projet} from "../models/projet";
+import { Succes } from '../models/succes';
 
 @Injectable({
   providedIn: 'root'
@@ -192,6 +193,13 @@ export class InfosService {
 
   ];
 
+  private succes: Succes[] = [
+      {
+        nom: 'Top 48 à la ZrT Trackmania Cup 2022',
+        image: 'tmcup.png',
+        description: 'OuiOuiOuiOuiOuiOuiOuiOuiOuiOuiOuiOuiOuiOuiOuiOuiOuiOuiOuiOui'
+      }
+  ]
   constructor() { }
 
   getHero(): Hero {
@@ -220,5 +228,9 @@ export class InfosService {
       return this.projets.find((p) => p.nom.toLowerCase().replace(' ', '') === nomProjet.toLowerCase().replace(' ', ''));
     }
     return undefined
+  }
+
+  getSuccess(): Succes[] {
+    return this.succes;
   }
 }
