@@ -18,3 +18,78 @@
 .navbar-custom {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  height: 100vh; /* Prend toute la hauteur de la fenêtre */
+  position: relative; /* Pour positionner social-links en bas */
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color : var(--gray-text);
+  text-align: center;
+}
+
+.hero-profession {
+   font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color : var(--gray-text);
+  text-align: center;
+}
+
+.nav-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(100 116 139);
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: var(--gray-text);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 80%;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--gray-text);
+}
+
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.social-links a {
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #e3e6ee;
+}

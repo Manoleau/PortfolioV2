@@ -1,15 +1,26 @@
-<nav class="navbar navbar-custom navbar-expand-lg w-50 mx-auto mt-2">
-  <button class="navbar-toggler mx-auto mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav mx-auto">
-      <li class="nav-item w-100">
-        <a class="nav-link active text-center" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Acceuil</a>
-      </li>
-      <li class="nav-item w-100">
-        <a class="nav-link text-center" routerLink="/projets" routerLinkActive="active">Projets</a>
-      </li>
-    </ul>
+<header>
+  <h1>{{ hero.prenom }} {{ hero.nom }}</h1>
+  <h3 class="hero-profession">{{ hero.profession }} / {{ hero.personnalite }}</h3>
+
+  <div class="container-fluid">
+    <nav class="nav flex-column">
+      <a class="nav-link active text-center" routerLink="#" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">A propos</a>
+      <a class="nav-link text-center" routerLink="#projets" routerLinkActive="active">Projets</a>
+    </nav>
+    
   </div>
-</nav>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/emmanuel-ardoin-819217251/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BQ20phKFmRayuyT9ne%2Ber0g%3D%3D" target="_blank" class="me-3">
+      <i class="fab fa-linkedin fa-2x"></i>
+    </a>
+    <a href="https://github.com/Manoleau" target="_blank" class="me-3">
+      <i class="fab fa-github fa-2x"></i>
+    </a>
+    <a href="https://discord.com/users/334695006663344151" download class="me-3">
+      <i class="fa-brands fa-discord fa-2x"></i>
+    </a>
+    <a href="CVManu.pdf" download class="me-3">
+      <i class="fa-solid fa-file fa-2x"></i>
+    </a>
+  </div>
+</header>

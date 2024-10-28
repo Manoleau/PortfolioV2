@@ -1,0 +1,8 @@
+.scrollable-content {
+    overflow-y: auto;
+    max-height: 100vh; /* Limite la hauteur du contenu pour le défilement */
+  }
+  
+  .fixed-content {
+    height: 100vh;
+  }

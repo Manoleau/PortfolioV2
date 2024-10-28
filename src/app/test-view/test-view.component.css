@@ -1,0 +1,10 @@
+.line {
+    width: 100px;
+    height: 4px;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+}
+
+.line:hover {
+    width: 200px;
+}
