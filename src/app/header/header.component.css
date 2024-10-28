@@ -23,7 +23,7 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  height: 100vh; /* Prend toute la hauteur de la fenêtre */
+  height: 97vh; /* Prend toute la hauteur de la fenêtre */
   position: relative; /* Pour positionner social-links en bas */
 }
 

@@ -4,8 +4,8 @@
 
   <div class="container-fluid">
     <nav class="nav flex-column">
-      <a class="nav-link active text-center" routerLink="#" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">A propos</a>
-      <a class="nav-link text-center" routerLink="#projets" routerLinkActive="active">Projets</a>
+      <a class="nav-link active text-center" href="#" id="about-link" (click)="changeActive($event)">A propos</a>
+      <a class="nav-link text-center" href="#projets" id="project-link">Projets</a>
     </nav>
     
   </div>
