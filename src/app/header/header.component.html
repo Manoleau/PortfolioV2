@@ -4,10 +4,10 @@
 
   <div class="container-fluid">
     <nav class="nav flex-column">
-      <a class="nav-link active text-center" href="#" id="about-link" (click)="changeActive($event)">A propos</a>
-      <a class="nav-link text-center" href="#projets" id="project-link">Projets</a>
+      @for (link of tabLinks; track $index) {
+        <a class="nav-link text-center" [class]="{'active' : link.active}" [href]="link.lien" [id]="link.id" (click)="changeActive(link)">{{link.nom}}</a>
+      }
     </nav>
-    
   </div>
   <div class="social-links">
     <a href="https://www.linkedin.com/in/emmanuel-ardoin-819217251/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BQ20phKFmRayuyT9ne%2Ber0g%3D%3D" target="_blank" class="me-3">

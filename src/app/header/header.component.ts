@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {RouterOutlet, RouterLink, RouterLinkActive,} from '@angular/router';
 import {Hero} from "../models/hero";
 import {InfosService} from "../services/infos.service";
+import { Link } from '../models/link';
 
 @Component({
   selector: 'app-header',
@@ -12,20 +13,31 @@ import {InfosService} from "../services/infos.service";
 })
 export class HeaderComponent implements OnInit {
   hero!: Hero;
-  // tabLinks: [] = [
-  //   {
-
-  //   }
-  // ]
-  currentLinkActive: string = 'about'
+  tabLinks: Link[] = [
+    {
+        id : 'about-link',
+        nom : 'A Propos',
+        lien : '#about',
+        active : true
+    },
+    {
+      id : 'project-link',
+      nom : 'Projets',
+      lien : '#projets',
+      active : false
+    },
+  ]
 
   constructor(private infosService: InfosService) {}
 
-  changeActive(e: Event):void {
-    const target = e.target as HTMLLinkElement;
-
-    console.log('Contenu du bouton :', target.innerText); // Texte du bouton
-    console.log('Data-info :', target.getAttribute('data-info'));
+  changeActive(link: Link):void {
+      this.tabLinks.forEach((item) => {
+        if (item.id === link.id) {
+          item.active = true
+        } else {
+          item.active = false
+        }
+      })
   }
 
 

@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Hero} from "../models/hero";
 import { HeroComponent } from "../hero/hero.component";
 import {InfosService} from "../services/infos.service";
