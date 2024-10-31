@@ -1,0 +1,19 @@
+<div class="experiences">
+    @for (experience of experiences; track $index) {
+        <div class="experience">
+            <h3>{{ experience.titre }} - {{ experience.entreprise }}</h3>
+            <p>
+                {{ experience.dateDebut | date: 'MM/yyyy' }} -
+                {{ experience.dateFin ? (experience.dateFin | date: 'MM/yyyy') : 'Présent' }}
+            </p>
+            <p>{{ experience.description }}</p>
+            <div class="d-flex">
+            @for (competence of experience.competences; track $index) {
+                <app-competence [competence]="competence"></app-competence>
+            }
+            </div>
+        </div>
+    }
+</div>
+
+

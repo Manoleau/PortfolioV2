@@ -27,6 +27,12 @@ export class HeaderComponent implements OnInit {
       active : false
     },
     {
+      id : 'experiences-link',
+      nom : 'Expériences',
+      lien : '#experiences',
+      active : false
+    },
+    {
       id : 'project-link',
       nom : 'Projets',
       lien : '#projets',

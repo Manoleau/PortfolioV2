@@ -5,11 +5,12 @@ import {InfosService} from "../services/infos.service";
 import { CompetencesComponent } from "../competences/competences.component";
 import {InformationsComponent} from "../informations/informations.component";
 import {ProjetsComponent} from "../projets/projets.component";
+import { ExperiencesComponent } from '../experiences/experiences.component';
 
 @Component({
   selector: 'app-home-view',
   standalone: true,
-  imports: [HeroComponent, CompetencesComponent, InformationsComponent, ProjetsComponent],
+  imports: [HeroComponent, InformationsComponent, ExperiencesComponent, CompetencesComponent, InformationsComponent, ProjetsComponent],
   templateUrl: './home-view.component.html',
   styleUrl: './home-view.component.css'
 })

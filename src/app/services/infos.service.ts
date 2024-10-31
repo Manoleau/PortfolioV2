@@ -4,6 +4,7 @@ import {Competence} from "../models/competence";
 import {CategorieCompetence} from "../models/categorie-competence";
 import {Information} from "../models/information";
 import {Projet} from "../models/projet";
+import { Experience } from '../models/experience';
 
 @Injectable({
   providedIn: 'root'
@@ -33,102 +34,121 @@ export class InfosService {
     nom: 'Autres',
     image: 'fas fa-ellipsis-h'
   }
+  private html = {
+    nom: 'HTML',
+    image: 'fab fa-html5 ',
+    categorie: this.language
+  }
+  private css = {
+    nom: 'CSS',
+    image: 'fab fa-css3-alt ',
+    categorie: this.language
+  }
+  private js = {
+    nom: 'JavaScript',
+    image: 'fab fa-js ',
+    categorie: this.language
+  }
+  private php = {
+    nom: 'PHP',
+    image: 'fab fa-php ',
+    categorie: this.language
+  }
+  private python = {
+    nom: 'Python',
+    image: 'fab fa-python ',
+    categorie: this.language
+  }
+  private java = {
+    nom: 'Java',
+    image: 'fab fa-java ',
+    categorie: this.language
+  }
+  private c = {
+    nom: 'C',
+    image: '',
+    categorie: this.language
+  }
+  private symfony = {
+    nom: 'Symfony',
+    image: '',
+    categorie: this.framework
+  }
+  private nodejs = {
+    nom: 'Node.js',
+    image: 'fab fa-node-js ',
+    categorie: this.framework
+  }
+  private vuejs = {
+    nom: 'Vue.js',
+    image: 'fab fa-vuejs ',
+    categorie: this.framework
+  }
+  private reactjs = {
+    nom: 'React.js',
+    image: 'fab fa-react ',
+    categorie: this.framework
+  }
+  private bootstrap = {
+    nom: 'Bootstrap',
+    image: 'fab fa-bootstrap ',
+    categorie: this.framework
+  }
+  private angular = {
+    nom: 'Angular',
+    image: 'fab fa-angular',
+    categorie: this.framework
+  }
+  private springboot = {
+    nom: 'Spring Boot',
+    image: '',
+    categorie: this.framework
+  }
+  private django = {
+    nom: 'Django',
+    image: 'django.png',
+    categorie: this.framework
+  }
+  private mysql = {
+    nom: 'MySQL',
+    image: 'mysql.png ',
+    categorie: this.datebase
+  }
+  private phpmyadmin = {
+    nom: 'PhpMyAdmin',
+    image: '',
+    categorie: this.datebase
+  }
+  private mongodb = {
+    nom: 'MongoDB',
+    image: '',
+    categorie: this.datebase
+  }
+  private postgres = {
+    nom: 'PostgreSQL',
+    image: '',
+    categorie: this.datebase
+  }
   private competences: Competence[] = [
-    {
-      nom: 'HTML',
-      image: 'fab fa-html5 ',
-      categorie: this.language
-    },
-    {
-      nom: 'CSS',
-      image: 'fab fa-css3-alt ',
-      categorie: this.language
-    },
-    {
-      nom: 'JavaScript',
-      image: 'fab fa-js ',
-      categorie: this.language
-    },
-    {
-      nom: 'PHP',
-      image: 'fab fa-php ',
-      categorie: this.language
-    },
-    {
-      nom: 'Python',
-      image: 'fab fa-python ',
-      categorie: this.language
-    },
-    {
-      nom: 'Java',
-      image: 'fab fa-java ',
-      categorie: this.language
-    },
-    {
-      nom: 'C',
-      image: '',
-      categorie: this.language
-    },
-    {
-      nom: 'Symfony',
-      image: '',
-      categorie: this.framework
-    },
-    {
-      nom: 'Node.js',
-      image: 'fab fa-node-js ',
-      categorie: this.framework
-    },
-    {
-      nom: 'Vue.js',
-      image: 'fab fa-vuejs ',
-      categorie: this.framework
-    },
-    {
-      nom: 'React.js',
-      image: 'fab fa-react ',
-      categorie: this.framework
-    },
-    {
-      nom: 'Bootstrap',
-      image: 'fab fa-bootstrap ',
-      categorie: this.framework
-    },
-    {
-      nom: 'Angular',
-      image: 'fab fa-angular',
-      categorie: this.framework
-    },
-    {
-      nom: 'Spring Boot',
-      image: '',
-      categorie: this.framework
-    },
-    {
-      nom: 'Django',
-      image: 'django.png',
-      categorie: this.framework
-    },
-    {
-      nom: 'MySQL',
-      image: 'mysql.png ',
-      categorie: this.datebase
-    },
-    {
-      nom: 'PhpMyAdmin',
-      image: '',
-      categorie: this.datebase
-    },
-    {
-      nom: 'MongoDB',
-      image: '',
-      categorie: this.datebase
-    },
-    {
-      nom: 'PostgreSQL',
-      image: '',
-      categorie: this.datebase
-    }
+    this.html,
+    this.css,
+    this.js,
+    this.php,
+    this.python,
+    this.java,
+    this.c,
+    this.symfony,
+    this.nodejs,
+    this.vuejs,
+    this.reactjs,
+    this.bootstrap,
+    this.angular,
+    this.springboot,
+    this.django,
+    this.mysql,
+    this.phpmyadmin,
+    this.mongodb,
+    this.postgres
   ]
 
   private informations: Information[] = [
@@ -191,12 +211,32 @@ export class InfosService {
     },
 
   ];
+  
+  private experiences: Experience[] = [
+      {
+        titre: "Alternance Développeur",
+        entreprise: "YPOK",
+        description: "",
+        dateDebut: new Date(2024, 9, 21),
+        dateFin: null,
+        competences: [
+          this.symfony,
+          this.bootstrap,
+          this.js
+        ]
+      }
+  ]
 
   constructor() { }
 
   getHero(): Hero {
     return this.hero;
   }
+
+  getExperiences(): Experience[] {
+      return this.experiences;
+  }
+
   getCompetences(): Competence[] {
     return this.competences;
   }

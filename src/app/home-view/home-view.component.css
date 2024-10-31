@@ -9,3 +9,7 @@ h2 {
 .col-md-6 {
   width: 70%;
 }
+
+#about, #skills, #projets {
+  scroll-behavior: smooth;
+}

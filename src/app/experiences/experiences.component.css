@@ -1,0 +1,15 @@
+h3, p {
+    color : var(--gray-text);
+
+}
+.experience {
+    border: 3px solid #283044;
+    border-radius: .75rem;
+    padding: 10px;
+    background-color: transparent;
+}
+.experiences {
+    border: 3px solid white;
+    border-radius: .75rem;
+    padding: 15px;
+}
