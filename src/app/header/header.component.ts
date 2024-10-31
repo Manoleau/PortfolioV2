@@ -21,6 +21,12 @@ export class HeaderComponent implements OnInit {
         active : true
     },
     {
+      id : 'skills-link',
+      nom : 'Compétences',
+      lien : '#skills',
+      active : false
+    },
+    {
       id : 'project-link',
       nom : 'Projets',
       lien : '#projets',
