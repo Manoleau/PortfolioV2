@@ -4,6 +4,10 @@ body {
   scrollbar-width: thin;
   scrollbar-color: #007bff #f1f1f1;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   --gray-text: #e3e6ee;
   --gray-text-nav-bar: #a3acc8;

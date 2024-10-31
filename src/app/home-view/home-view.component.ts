@@ -15,10 +15,12 @@ import {ProjetsComponent} from "../projets/projets.component";
 })
 export class HomeViewComponent implements OnInit{
   hero!: Hero;
-
+  description: string[] = []
   constructor(private infosService: InfosService) {}
 
   ngOnInit(): void {
     this.hero = this.infosService.getHero();
+    this.description = this.hero.description.split('|')
+
   }
 }
