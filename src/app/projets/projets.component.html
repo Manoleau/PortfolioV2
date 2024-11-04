@@ -11,8 +11,7 @@
             @if (avance) {
               <p class="card-text">{{ projet.description }}</p>
             }
-            <a [href]="projet.git" target="_blank" class="btn btn-primary">Voir le git</a>
-            <a href="/projet/{{projet.nom}}" class="btn btn-primary ms-2">+ d'infos</a>
+            <a [href]="projet.git" [attr.target]="projet.git ? '_blank' : null" class="btn btn-primary">Voir le git</a>
           </div>
           @if (!projet.pret) {
             <div class="card-footer text-muted">

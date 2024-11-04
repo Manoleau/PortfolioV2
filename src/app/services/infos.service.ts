@@ -175,6 +175,13 @@ export class InfosService {
       pret: false,
     },
     {
+      nom: 'Quizz Of Legends',
+      image: '',
+      description: 'Projet de Qualité Dev en groupe',
+      git: 'https://forge.univ-lyon1.fr/p2201619/ra.05.08-quizz-of-legends',
+      pret: false,
+    },
+    {
       nom: 'LeagueMastery',
       image: '',
       description: '',

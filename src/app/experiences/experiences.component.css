@@ -9,7 +9,7 @@ h3, p {
     background-color: transparent;
 }
 .experiences {
-    border: 3px solid white;
+    border: 3px solid var(--gray-text);
     border-radius: .75rem;
     padding: 15px;
 }
