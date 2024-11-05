@@ -22,6 +22,5 @@ export class HomeViewComponent implements OnInit{
   ngOnInit(): void {
     this.hero = this.infosService.getHero();
     this.description = this.hero.description.split('|')
-
   }
 }

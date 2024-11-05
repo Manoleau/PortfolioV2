@@ -1,11 +1,11 @@
-<div class="experiences">
     @for (experience of experiences; track $index) {
         <div class="experience">
             <h3>{{ experience.titre }} - {{ experience.entreprise }}</h3>
             <p>
-                {{ experience.dateDebut | date: 'MM/yyyy' }} -
-                {{ experience.dateFin ? (experience.dateFin | date: 'MM/yyyy') : 'Présent' }}
-            </p>
+                {{ experience.dateDebut | date: 'dd MMMM yyyy' }} -
+                {{ experience.dateFin ? (experience.dateFin | date: 'dd MMMM yyyy') : 'Présent' }}
+                ({{ calculateDuration(experience.dateDebut, experience.dateFin) }})
+            </p>            
             <p>{{ experience.description }}</p>
             <div class="d-flex">
             @for (competence of experience.competences; track $index) {
@@ -14,6 +14,5 @@
             </div>
         </div>
     }
-</div>
 
 

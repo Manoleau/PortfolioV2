@@ -129,6 +129,21 @@ export class InfosService {
     image: '',
     categorie: this.datebase
   }
+  private kotlin = {
+    nom: 'Kotlin',
+    image: '',
+    categorie: this.language
+  }
+  private androidstudio = {
+    nom: 'Android Studio',
+    image: '',
+    categorie: this.other
+  }
+  private docker = {
+    nom: 'Docker',
+    image: 'fa-brands fa-docker',
+    categorie: this.other
+  }
   private competences: Competence[] = [
     this.html,
     this.css,
@@ -136,6 +151,7 @@ export class InfosService {
     this.php,
     this.python,
     this.java,
+    this.kotlin,
     this.c,
     this.symfony,
     this.nodejs,
@@ -148,7 +164,9 @@ export class InfosService {
     this.mysql,
     this.phpmyadmin,
     this.mongodb,
-    this.postgres
+    this.postgres,
+    this.docker,
+    this.androidstudio
   ]
 
   private informations: Information[] = [
@@ -170,53 +188,87 @@ export class InfosService {
     {
       nom: 'Portfolio',
       image: 'projet-portfolio.PNG',
-      description: "C'est mon Portfolio",
+      description: "Vous le regardez actuellement :D|Il consiste à me présenter.",
       git: 'https://github.com/Manoleau/PortfolioV2',
-      pret: false,
+      pret: true,
+      competences: [
+        this.angular,
+        this.bootstrap
+      ]
     },
     {
       nom: 'Quizz Of Legends',
       image: '',
-      description: 'Projet de Qualité Dev en groupe',
+      description: 'Projet de qualité de développement en groupe.|Il consiste à afficher une description d\'un personnage ou d\'un objet et de trouver son nom.|L\'objectif de ce projet de cours était de faire des tests avec sonarqube.',
       git: 'https://forge.univ-lyon1.fr/p2201619/ra.05.08-quizz-of-legends',
       pret: false,
+      competences: [
+        this.django,
+        this.mysql,
+        this.css,
+        this.js,
+        this.docker
+      ]
     },
     {
       nom: 'LeagueMastery',
       image: '',
-      description: '',
-      git: '',
+      description: 'Projet final du cours de développement mobile en autonomie.|Il consiste à afficher les points de maîtrise de champions d\'un joueur de League of Legends en récupérant les informations sur une api créée pour le projet.',
+      git: 'https://github.com/Manoleau/league-mastery',
       pret: true,
+      competences: [
+        this.java,
+        this.kotlin,
+        this.androidstudio,
+        this.mongodb
+      ]
     },
     {
       nom: 'EDT IUT',
       image: 'https://www.aht.li/3813545/logo_EDTIUT.png',
-      description: '',
+      description: 'Projet personnel / Bot Discord.|Il consiste à récupérer les emplois du temps des étudiants à l\'IUT Informatique pour les afficher sur notre groupe discord. Il peut aussi afficher les salles de cours qui sont libre.',
       git: 'https://github.com/Manoleau/edt-iut',
       pret: true,
+      competences: [
+        this.python,
+        this.mysql,
+      ]
     },
     {
-      nom: '',
+      nom: 'LeagueDLE',
       image: '',
-      description: '',
-      git: '',
-      pret: false,
+      description: 'Projet personnel / Bot Discord.|Dans la même idée que Quizz of Legends mais sur un bot discord avec un système de récompenses et d\'ouverture de coffres pour obtenir des skins.',
+      git: 'https://github.com/Manoleau/bot-lol-dle',
+      pret: true,
+      competences: [
+          this.python,
+          this.mysql
+      ]
     },
     {
-      nom: '',
+      nom: 'Graphe aide à la décision',
       image: '',
-      description: '',
-      git: '',
-      pret: false,
+      description: 'SAE IUT (groupe).|Le logiciel affiche différents points dans un graphe (map) qui représentre des centres hospitaliers et cela permet d\'aider les médecins en déplacement de savoir quelle est le chemin le plus rapide/sûr/court à l\'aide de l\'algorithme de Dijkstra.',
+      git: 'https://forge.univ-lyon1.fr/p2200950/sae_java_outil_aide_a_la_decision',
+      pret: true,
+      competences: [
+          this.java
+      ]
     },
     {
-      nom: '',
+      nom: 'Daily Info',
       image: '',
-      description: '',
-      git: '',
-      pret: false,
+      description: 'SAE IUT (groupe).|Cette application consiste à afficher une mission ou un défi par jour (présentiel, code, multimédia...)',
+      git: 'https://forge.univ-lyon1.fr/p2202150/daily-info',
+      pret: true,
+      competences: [
+          this.php,
+          this.mysql,
+          this.js,
+          this.css,
+          this.html
+      ]
     },
-
   ];
   
   private experiences: Experience[] = [
@@ -228,6 +280,22 @@ export class InfosService {
         dateFin: null,
         competences: [
           this.symfony,
+          this.php,
+          this.bootstrap,
+          this.js,
+          this.postgres,
+          this.docker
+        ]
+      },
+      {
+        titre: "Stage Développeur",
+        entreprise: "ONYL Rocks",
+        description: "",
+        dateDebut: new Date(2024, 3, 15),
+        dateFin: new Date(2024, 5, 30),
+        competences: [
+          this.symfony,
+          this.php,
           this.bootstrap,
           this.js
         ]

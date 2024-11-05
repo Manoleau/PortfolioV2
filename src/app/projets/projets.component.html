@@ -1,26 +1,37 @@
 <div class="container mt-5">
   <div class="row">
     @for (projet of projets; track $index) {
-      <div class="col-md-4 mb-4">
+      <div class="col-md-6 mb-4">
         <div class="card shadow-sm">
-          @if (avance) {
-            <img [src]="projet.image" class="card-img-top" alt="{{ projet.nom }}">
-          }
+  
           <div class="card-body">
             <h5 class="card-title">{{ projet.nom }}</h5>
-            @if (avance) {
-              <p class="card-text">{{ projet.description }}</p>
+            @if (projet.description) {
+              <p class="card-text text-start" [innerHTML]="formatDescription(projet.description)"></p>
             }
-            <a [href]="projet.git" [attr.target]="projet.git ? '_blank' : null" class="btn btn-primary">Voir le git</a>
+            <div class="d-flex justify-content-start flex-wrap container-competences">
+              @for (competence of projet.competences; track $index) {
+                  <app-competence [competence]="competence" [taille]="'petite'"></app-competence>
+              }
+            </div>
+            <a 
+              [href]="projet.git" 
+              [attr.target]="projet.git ? '_blank' : null" 
+              class="btn btn-primary mt-3"
+              [attr.aria-disabled]="!projet.git ? true : null"
+              >Voir le git</a>  
           </div>
+          
+  
           @if (!projet.pret) {
             <div class="card-footer text-muted">
               <small>En cours de développement</small>
             </div>
           }
+          
         </div>
       </div>
     }
-
+    
   </div>
 </div>

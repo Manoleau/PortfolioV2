@@ -1,12 +1,14 @@
 @if (competence) {
   <div class="col-6 col-md-4 col-lg-3 mb-3"></div>
-    <div class="competence-card shadow-sm m-1">
-      @if (competence.image.includes('fa-')) {
-        <i [class]="competence.image"></i>
-      } @else if (competence.image.includes('.png') || competence.image.includes('.svg')) {
-        <img [src]="competence.image" alt>
-      }
+  <div class="competence-card shadow-sm m-1" [class]="taille === 'petite' ? 'small-competence' : ''">
+    @if (competence.image.includes('fa-')) {
+      <i [class]="competence.image"></i>
+    } @else if (competence.image.includes('.png') || competence.image.includes('.svg')) {
+      <img [src]="competence.image" alt>
+    }
 
-      <span class="card-title mt-2 ms-1">{{ competence.nom }}</span>
-    </div>
+    <span class="card-title mt-2 ms-1">{{ competence.nom }}</span>
+  </div>
+  
+  
 }
