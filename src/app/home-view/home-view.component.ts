@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {Hero} from "../models/hero";
-import { HeroComponent } from "../hero/hero.component";
 import {InfosService} from "../services/infos.service";
 import { CompetencesComponent } from "../competences/competences.component";
 import {InformationsComponent} from "../informations/informations.component";
@@ -10,7 +9,7 @@ import { ExperiencesComponent } from '../experiences/experiences.component';
 @Component({
   selector: 'app-home-view',
   standalone: true,
-  imports: [HeroComponent, InformationsComponent, ExperiencesComponent, CompetencesComponent, InformationsComponent, ProjetsComponent],
+  imports: [InformationsComponent, ExperiencesComponent, CompetencesComponent, InformationsComponent, ProjetsComponent],
   templateUrl: './home-view.component.html',
   styleUrl: './home-view.component.css'
 })
