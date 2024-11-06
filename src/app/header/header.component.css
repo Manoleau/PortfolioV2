@@ -74,7 +74,15 @@ header h1 {
   color: var(--gray-text);
 }
 
-
+h3 a {
+  text-decoration: none;
+  color: rgb(100 116 139);
+  transition: color 0.3s ease;
+}
+h3 a:hover {
+  color: var(--gray-text);
+  text-decoration: underline;
+}
 .social-links {
   display: flex;
   gap: 1rem;

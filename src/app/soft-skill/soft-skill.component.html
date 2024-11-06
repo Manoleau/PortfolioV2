@@ -1,0 +1,8 @@
+@if (skill) {
+    <div class="skill-card shadow-sm m-1"
+        [matTooltip]="skill.description"
+        matTooltipPosition="above"
+        matTooltipShowDelay="100">
+        <span class="card-title mt-2 ms-1">{{ skill.nom }}</span>
+    </div>
+}

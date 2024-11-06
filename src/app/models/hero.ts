@@ -1,3 +1,5 @@
+import { Qualite } from "./qualite"
+
 export interface Hero {
     prenom: string
     nom: string
@@ -5,5 +7,5 @@ export interface Hero {
     photo: string
     description: string
     personnalite: string
-
+    qualite: Qualite[]
 }

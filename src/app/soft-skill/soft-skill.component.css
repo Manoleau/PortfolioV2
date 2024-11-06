@@ -1,0 +1,23 @@
+.skill-card {
+    position: relative;
+    width: 150px;
+    background-color: #283044;
+    color: white;
+    border-radius: 50px;
+    padding: 12px;
+    text-align: center;
+    border: none;
+    transition: transform 0.2s;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+
+.skill-card:hover {
+    transform: scale(1.05); /* Agrandir légèrement lors du survol */
+}
+span {
+    font-size: 15px;
+}

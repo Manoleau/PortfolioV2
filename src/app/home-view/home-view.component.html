@@ -7,7 +7,14 @@
                     <p>{{desc}}</p>
                 }
             </div>
+            <h4 class="text-center">Qualités</h4>
+            <div class="soft-skills d-flex justify-content-center flex-wrap">
+                @for (qualite of hero.qualite; track $index) {
+                    <app-soft-skill [skill]="qualite"></app-soft-skill>
+                }
+            </div>
             <app-informations></app-informations>
+            
         </div>
     </div>
 </section>

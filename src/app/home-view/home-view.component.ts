@@ -5,11 +5,12 @@ import { CompetencesComponent } from "../competences/competences.component";
 import {InformationsComponent} from "../informations/informations.component";
 import {ProjetsComponent} from "../projets/projets.component";
 import { ExperiencesComponent } from '../experiences/experiences.component';
+import { SoftSkillComponent } from '../soft-skill/soft-skill.component';
 
 @Component({
   selector: 'app-home-view',
   standalone: true,
-  imports: [InformationsComponent, ExperiencesComponent, CompetencesComponent, InformationsComponent, ProjetsComponent],
+  imports: [InformationsComponent, ExperiencesComponent, CompetencesComponent, InformationsComponent, ProjetsComponent, SoftSkillComponent],
   templateUrl: './home-view.component.html',
   styleUrl: './home-view.component.css'
 })

@@ -16,7 +16,57 @@ export class InfosService {
     description: "Salut ! Moi, c'est Emmanuel. Actuellement en deuxième année d'études en informatique, je suis le genre de personne qui adore résoudre des casse-têtes et transformer les lignes de code en quelque chose de cool et fonctionnel.|Tout a commencé quand j'ai décidé de démonter mon vieux PC pour y changer les pièces et avoir plus de performances dans les jeux vidéos. Depuis, je suis fasciné par tout ce qui touche à la technologie et au développement.|Pour être honnête, l'école et moi, ça n'a pas toujours été une histoire d'amour. Mais quand il s'agit de mettre les mains dans le cambouis et de travailler sur des projets personnels, là je suis dans mon élément. Que ce soit pour développer des bots discord qui me plaisent ou pour trifouiller dans le hardware, je suis toujours prêt à relever le défi.|Quand je ne suis pas en train de coder ou de me plonger dans mes études, vous pouvez me trouver en train de jouer aux jeux vidéo ou en train de regarder des vidéos de Underscore_. Ça me permet de me détendre et de m'inspirer pour mes prochains projets.|Je suis toujours à la recherche de nouvelles opportunités pour apprendre et grandir dans le domaine de l'informatique. Si vous avez des projets intéressants ou des défis à relever, n'hésitez pas à me contacter. J'ai hâte de collaborer et de créer quelque chose d'exceptionnel ensemble.",
     personnalite: "ISTP",
     photo: "emmanuel.PNG",
-    profession: "Etudiant / Développeur"
+    profession: "Etudiant / Développeur",
+    qualite: [
+      {
+        nom: 'Curieux',
+        description : 'Explore et teste constamment'
+      },
+      {
+        nom: 'Ouvert d\'esprit',
+        description : 'Accueille les nouvelles idées facilement'
+      },
+      {
+        nom: 'Analytique',
+        description : 'Analyse et comprend les détails'
+      },
+      {
+        nom: 'Logique',
+        description : 'Raisonne de manière rationnelle'
+      },
+      {
+        nom: 'Réfléchi',
+        description : 'Pèse soigneusement ses options'
+      },
+      {
+        nom: 'Pratique',
+        description : 'Préfère l\'action aux théories abstraites'
+      },
+      {
+        nom: 'Pragmatique',
+        description : 'Gère les situations concrètes efficacement'
+      },
+      {
+        nom: 'Autonome',
+        description : 'Fonctionne bien sans supervision constante'
+      },
+      {
+        nom: 'Direct',
+        description : 'Va droit au but'
+      },
+      {
+        nom: 'Stable',
+        description : 'Garde son calme en crise'
+      },
+      {
+        nom: 'Ingénieux',
+        description : 'Trouve des solutions créatives rapidement'
+      },
+      {
+        nom: 'Efficace',
+        description : 'Atteint ses objectifs sans détour'
+      }
+    ]
   }
   private framework: CategorieCompetence = {
     nom: 'Framework',
@@ -309,7 +359,8 @@ export class InfosService {
           this.symfony,
           this.php,
           this.bootstrap,
-          this.js
+          this.js,
+          this.mysql
         ]
       }
   ]
