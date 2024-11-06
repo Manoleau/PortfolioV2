@@ -250,9 +250,9 @@ export class InfosService {
       nom: 'LeagueDLEWeb',
       image: '',
       description: 'Projet personnel.|La même chose que LeagueDLE mais en site web',
-      git: 'https://github.com/Manoleau/bot-lol-dle',
+      git: 'https://github.com/Manoleau/LeagueDleWeb',
       site: 'https://loldletitle.netlify.app/',
-      pret: true,
+      pret: false,
       competences: [
           this.angular
       ]
