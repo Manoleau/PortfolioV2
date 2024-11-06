@@ -331,6 +331,19 @@ export class InfosService {
           this.html
       ]
     },
+    {
+      nom: 'Kick Discord',
+      image: '',
+      description: 'Projet personnel.|Permet de kick rapidement des personnes non désirés d\'un vocal discord',
+      git: 'https://github.com/Manoleau/KickDiscord',
+      pret: true,
+      competences: [
+          this.kotlin,
+          this.java,
+          this.python,
+          this.androidstudio
+      ]
+    },
   ];
   
   private experiences: Experience[] = [
