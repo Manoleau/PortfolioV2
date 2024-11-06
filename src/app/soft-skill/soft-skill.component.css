@@ -16,7 +16,7 @@
 
 
 .skill-card:hover {
-    transform: scale(1.05); /* Agrandir légèrement lors du survol */
+    transform: scale(1.05);
 }
 span {
     font-size: 15px;

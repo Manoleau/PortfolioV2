@@ -1,6 +1,6 @@
     @for (experience of experiences; track $index) {
         <div class="experience">
-            <h3>{{ experience.titre }} - {{ experience.entreprise }}</h3>
+            <h3><a [href]="experience.lien" target="_blank">{{ experience.titre }} - {{ experience.entreprise }}</a></h3>
             <p>
                 {{ experience.dateDebut | date: 'dd MMMM yyyy' }} -
                 {{ experience.dateFin ? (experience.dateFin | date: 'dd MMMM yyyy') : 'Présent' }}

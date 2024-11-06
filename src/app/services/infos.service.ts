@@ -347,7 +347,8 @@ export class InfosService {
           this.js,
           this.postgres,
           this.docker
-        ]
+        ],
+        lien: 'https://www.ypok.com/'
       },
       {
         titre: "Stage Développeur",
@@ -361,7 +362,8 @@ export class InfosService {
           this.bootstrap,
           this.js,
           this.mysql
-        ]
+        ],
+        lien: 'https://onyl.rocks/'
       }
   ]
 

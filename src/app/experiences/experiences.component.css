@@ -1,6 +1,12 @@
-h3, p {
+h3, p, a {
     color : var(--gray-text);
 
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
 .experience {
     border: 3px solid #283044;
