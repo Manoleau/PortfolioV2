@@ -19,7 +19,16 @@
               [attr.target]="projet.git ? '_blank' : null" 
               class="btn btn-primary mt-3"
               [attr.aria-disabled]="!projet.git ? true : null"
-              >Voir le git</a>  
+              >Voir le git</a>
+              @if (projet.site) {
+                <a 
+                [href]="projet.site" 
+                [attr.target]="projet.site ? '_blank' : null" 
+                class="btn btn-secondary mt-3 ms-3"
+                [attr.aria-disabled]="!projet.site ? true : null"
+                >Voir le site</a>
+              }
+              
           </div>
           
   

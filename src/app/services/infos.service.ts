@@ -245,6 +245,18 @@ export class InfosService {
           this.mysql
       ]
     },
+    
+    {
+      nom: 'LeagueDLEWeb',
+      image: '',
+      description: 'Projet personnel.|La même chose que LeagueDLE mais en site web',
+      git: 'https://github.com/Manoleau/bot-lol-dle',
+      site: 'https://loldletitle.netlify.app/',
+      pret: true,
+      competences: [
+          this.angular
+      ]
+    },
     {
       nom: 'Graphe aide à la décision',
       image: '',
